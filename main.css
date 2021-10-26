@@ -3,3 +3,109 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #ddfff7;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  color: #fff;
+}
+.box {
+  width: 300px;
+  height: 200px;
+  background-color: #ddfff7;
+  position: relative;
+  box-shadow: 0px 0px 20px 8px rgb(0, 0, 0);
+  background-image: url("images/");
+  background-size: cover;
+  margin-left: 90px;
+}
+.box:after,
+.box:before {
+  mix-blend-mode: multiply;
+  filter: none;
+  z-index: -1;
+  content: "";
+  width: calc(100% + (50px * 2));
+  height: calc(100% + (50px * 2));
+  position: absolute;
+  display: block;
+  animation: border 10s ease-in-out infinite;
+  transform: translateX(-50px) translateY(-50px);
+}
+@keyframes border {
+  0%,
+  100% {
+    -webkit-clip-path: polygon(
+      0 0,
+      calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)),
+      100% 100%,
+      calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px))
+    );
+    clip-path: polygon(
+      0 0,
+      calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)),
+      100% 100%,
+      calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px))
+    );
+  }
+  50% {
+    -webkit-clip-path: polygon(
+      calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)),
+      100% 0,
+      calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)),
+      0 100%
+    );
+    clip-path: polygon(
+      calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)),
+      100% 0,
+      calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)),
+      0 100%
+    );
+  }
+}
+
+.box:after {
+  animation-delay: -5s;
+  background-color: #abe7e0;
+  clip-path: polygon(
+    0 0,
+    calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)),
+    100% 100%,
+    calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px))
+  );
+}
+.box:before {
+  background-color: #f1a5be;
+  clip-path: polygon(
+    calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)),
+    100% 0,
+    calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)),
+    0 100%
+  );
+}
+
+.box:hover:after {
+  animation-delay: -0.1s;
+}
+.box:hover:before,
+.box:hover:after {
+  animation-duration: 0.2s;
+}
+
+/* .feet {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+} */
