@@ -8,6 +8,8 @@ body {
   background-image: url(images/back4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
 }
 
 html,
@@ -17,18 +19,19 @@ body {
   background-color: #ddfff7;
   z-index: 1;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .box {
-  width: 50%;
-  height: 40vh;
+  width: 30%;
+  height: 50vh;
   background-color: #ddfff7;
   position: relative;
   box-shadow: 0px 0px 20px 8px rgb(0, 0, 0);
   background-image: url("images/back1.jpg");
   background-size: cover;
 }
+
 .box:after,
 .box:before {
   mix-blend-mode: multiply;
@@ -102,17 +105,19 @@ body {
   animation-duration: 0.5s;
 }
 
-.display-3 {
+.display-5 {
   text-align: center;
   padding: 0.5%;
 }
 
 .nav-item {
-  font-weight: 800;
+  font-weight: 500;
 }
+
 small {
   font-weight: 800;
 }
+
 small:hover {
   transition: ease-in-out 2ms;
   color: gray;
@@ -131,6 +136,15 @@ small:hover {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 2%;
+  padding: 1%;
   background-color: #f8f9fa;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+  width: 50%;
+  height: 450px;
 }
