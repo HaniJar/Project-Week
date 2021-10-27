@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
     <script src="main.js"></script>
   </head>
   <body>
@@ -48,11 +49,59 @@
             </li>
           </ul>
         </div>
-        <div>
-          <p class="social-links">Hello</p>
-        </div>
       </div>
     </nav>
+
+    section id="contact">
+    <div class="container-lg p-5">
+
+      <div class="text-center">
+        <h2>GET IN CONTACT WITH US!!</h2>
+        <p class="lead">Questions to ask? Fill out the form to contact me directly...</p>
+      </div>
+      <div class="row justify-content-center my-5">
+        <div class="col-lg-6">
+
+          <form>
+            <label for="email" class="form-label">Email address:</label>
+            <div class="input-group mb-4">
+              <span class="input-group-text">
+                <i class="bi bi-envelope-fill text-danger"></i>
+              </span>
+              <input type="text" id="email" class="form-control" placeholder="example@gmail.com" />
+            </div>
+            <label for="name" class="form-label">Name:</label>
+            <div class="mb-4 input-group">
+              <span class="input-group-text">
+                <i class="bi bi-person-fill text-warning"></i>
+              </span>
+              <input type="text" id="name" class="form-control" placeholder="name & surname" />
+            </div>
+            <label for="subject" class="form-label">Question?</label>
+            <div class="mb-4 input-group">
+              <span class="input-group-text">
+                <i class="bi bi-chat-right-dots-fill text-primary"></i>
+              </span>
+              <select class="form-select" id="subject">
+                <option value="pricing" selected>Pricing query</option>
+                <option value="content">Content query</option>
+                <option value="other">Other query</option>
+              </select>
+            </div>
+            <div class="mb-4 mt-5 form-floating">
+              <textarea class="form-control" id="query" style="height: 140px" placeholder="query"></textarea>
+              <label for="query">Your message...</label>
+            </div>
+            <div class="mb-4 text-center">
+              <button type="submit" class="btn btn-danger">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
 
     <script src="bootstrap.bundle.min.js"></script>
   </body>

@@ -19,7 +19,7 @@ body {
   background-color: #ddfff7;
   z-index: 1;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .box {
@@ -105,10 +105,10 @@ body {
   animation-duration: 0.5s;
 }
 
-.display-5 {
+/* .display-5 {
   text-align: center;
   padding: 0.5%;
-}
+} */
 
 .nav-item {
   font-weight: 500;
@@ -120,7 +120,7 @@ small {
 
 small:hover {
   transition: ease-in-out 2ms;
-  color: gray;
+  color: rgb(226, 143, 143);
 }
 
 .intro {
@@ -132,7 +132,7 @@ small:hover {
 }
 
 .feet {
-  text-align: center;
+  text-align: left;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -147,4 +147,46 @@ small:hover {
   margin-top: 90px;
   width: 50%;
   height: 450px;
+}
+
+.header {
+  background: transparent;
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+}
+
+.typewriter h1 {
+  color: rgb(0, 0, 0);
+  font-family: monospace;
+  overflow: hidden;
+  border-right: 0.15em solid rgb(221, 171, 78);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.3em;
+  animation: typing 4s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(231, 178, 80);
+  }
+}
+
+h1 {
+  text-shadow: 2px 2px 5px black;
 }
