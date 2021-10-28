@@ -217,3 +217,21 @@ h1 {
   text-decoration: none;
   color: rgb(155, 133, 175);
 }
+
+#da-btn:hover{
+  background-color: #ac72b3;
+}
+
+#da-womb:hover {
+  transform: translateY(-5px);
+  transition: ease-out 0.3s;
+}
+
+#mdl-btn{
+  margin-top: 5%;
+  width: auto;
+}
+
+.shadow-sm{
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.151) !important;
+}
