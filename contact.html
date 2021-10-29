@@ -56,57 +56,33 @@
       </div>
     </nav>
 
-    section id="contact">
-    <div class="container-lg p-5">
+    <h1 class="display-4 mt-5 pt-5">Contact Me:</h1>
 
-      <div class="text-center">
-        <h2>GIVE ME A CALL OR AN EMAIL!</h2>
-        <p class="lead">Questions to ask? Fill out the form to contact me directly.</p>
-      </div>
-      <div class="row justify-content-center my-5">
-        <div class="col-lg-6">
-
-          <form>
-            <label for="email" class="form-label">Email address:</label>
-            <div class="input-group mb-4">
-              <span class="input-group-text">
-                <i class="bi bi-envelope-fill text-secondary"></i>
-              </span>
-              <input type="text" id="email" class="form-control" placeholder="example@gmail.com" />
-            </div>
-            <label for="name" class="form-label">Name:</label>
-            <div class="mb-4 input-group">
-              <span class="input-group-text">
-                <i class="bi bi-person-fill text-secondary"></i>
-              </span>
-              <input type="text" id="name" class="form-control" placeholder="name & surname" />
-            </div>
-            <label for="subject" class="form-label">Question?</label>
-            <div class="mb-4 input-group">
-              <span class="input-group-text">
-                <i class="bi bi-chat-right-dots-fill text-secondary"></i>
-              </span>
-              <select class="form-select" id="subject">
-                <option value="pricing" selected>Pricing query</option>
-                <option value="content">Content query</option>
-                <option value="other">Other query</option>
-              </select>
-            </div>
-            <div class="mb-4 mt-5 form-floating">
-              <textarea class="form-control" id="query" style="height: 140px" placeholder="query"></textarea>
-              <label for="query">Your message...</label>
-            </div>
-            <div class="mb-4 text-center">
-              <button type="submit" class="btn btn-secondary">Submit</button>
-            </div>
-          </form>
+    <div class="container1">
+      <form method="POST"  action="https://formspree.io/f/xleayryb">
+        <fieldset>
+          <legend id="legend">Contact</legend>
+          <div class="field-wrapper">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-element" required autocomplete="name" placeholder="Full Name">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-element" required autocomplete="email" placeholder="name@example.com">
+            <label for="confirm-email">Confirm Email</label>
+            <input type="email" name="confirm-email" id="confirm-email" class="form-element" required autocomplete="email" placeholder="name@example.com">
+            <label for="tel">Telephone</label>
+            <input type="tel" name="phone" id="phone" class="form-element" required autocomplete="tel" placeholder="(+27) 625 652">
+            <label for="message">Message</label>
+            <input type="text" name="message" id="message" class="form-element" required autocomplete="" placeholder="Your Message">
+          </div>
+        </fieldset>
+    
+        <div class="right">
+          <button id="submit-me" type="submit">Submit</button>
         </div>
-      </div>
+      </form>
     </div>
-  </section>
-</section>
 
-<footer class="static-bottom bg-light text-center">@copyright 2021 Haniah Jardien</footer>
+<footer class="fixed-bottom bg-dark text-center">@copyright 2021 Haniah Jardien</footer>
     <script src="bootstrap.bundle.min.js"></script>
   </body>
 </html>
