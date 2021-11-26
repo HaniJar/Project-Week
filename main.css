@@ -755,7 +755,7 @@ button:active {
   }
 
   .card-header {
-    color: #000;
+    color: rgb(226, 130, 186);
     font-weight: 700;
   }
 
@@ -846,6 +846,7 @@ button:active {
 
   #color2 {
     color: #000;
+    font-weight: bold;
   }
 
   .p {
@@ -856,7 +857,7 @@ button:active {
     padding: 2%;
   }
 
-  .cards-list {
+  /* .cards-list {
     z-index: 0;
     width: 100%;
     display: flex;
@@ -910,7 +911,7 @@ button:active {
 
   .title-black {
     color: black;
-  }
+  } */
 
   @media all and (max-width: 500px) {
     .card-list {
@@ -1188,3 +1189,5 @@ button:active {
     margin-bottom: 10px;
   }
 }
+
+/* new cards */
